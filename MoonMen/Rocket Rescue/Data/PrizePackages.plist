@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PrizesPackage1</key>
+	<array>
+		<string>Health</string>
+	</array>
+	<key>PrizesPackage2</key>
+	<array>
+		<string>Shield</string>
+	</array>
+	<key>PrizesPackage3</key>
+	<array>
+		<string>BigBomb</string>
+	</array>
+	<key>PrizesPackage4</key>
+	<array>
+		<string>DoubleCannons</string>
+	</array>
+	<key>PrizesPackage5</key>
+	<array>
+		<string>Health</string>
+		<string>Shield</string>
+	</array>
+	<key>PrizesPackage6</key>
+	<array>
+		<string>Shield</string>
+		<string>BigBomb</string>
+	</array>
+	<key>PrizesPackage7</key>
+	<array>
+		<string>Health</string>
+		<string>Shield</string>
+		<string>DoubleCannons</string>
+	</array>
+</dict>
+</plist>

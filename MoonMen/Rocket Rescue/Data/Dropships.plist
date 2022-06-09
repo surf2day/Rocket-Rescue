@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DropShip1</key>
+	<dict>
+		<key>image</key>
+		<string>DropShip1</string>
+		<key>tractorBeamImage</key>
+		<string>TractorBeam1</string>
+	</dict>
+	<key>DropShip2</key>
+	<dict>
+		<key>image</key>
+		<string>DropShip2</string>
+		<key>tractorBeamImage</key>
+		<string>TractorBeam2</string>
+	</dict>
+	<key>DropShip3</key>
+	<dict>
+		<key>image</key>
+		<string>DropShip3</string>
+		<key>tractorBeamImage</key>
+		<string>TractorBeam3</string>
+	</dict>
+	<key>DropShip4</key>
+	<dict>
+		<key>image</key>
+		<string>DropShip4</string>
+		<key>tractorBeamImage</key>
+		<string>TractorBeam4</string>
+	</dict>
+	<key>DropShip5</key>
+	<dict>
+		<key>image</key>
+		<string>DropShip5</string>
+		<key>tractorBeamImage</key>
+		<string>TractorBeam5</string>
+	</dict>
+</dict>
+</plist>

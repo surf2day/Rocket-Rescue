@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Shield</key>
+	<dict>
+		<key>prizeAmount</key>
+		<integer>10</integer>
+		<key>path</key>
+		<string>glide</string>
+		<key>image</key>
+		<string>shield</string>
+		<key>deploymentSound</key>
+		<string>placeHolder</string>
+		<key>collectionSound</key>
+		<string>none</string>
+	</dict>
+	<key>Health</key>
+	<dict>
+		<key>prizeAmount</key>
+		<integer>50</integer>
+		<key>path</key>
+		<string>hold</string>
+		<key>image</key>
+		<string>health</string>
+		<key>deploymentSound</key>
+		<string>placeHolder</string>
+		<key>collectionSound</key>
+		<string>healthCollectionSound.flac</string>
+	</dict>
+	<key>DoubleCannons</key>
+	<dict>
+		<key>prizeAmount</key>
+		<integer>10</integer>
+		<key>path</key>
+		<string>bounce</string>
+		<key>image</key>
+		<string>doubleCannons</string>
+		<key>deploymentSound</key>
+		<string>placeHolder</string>
+		<key>collectionSound</key>
+		<string>doubleCannonsCollectionSound.wav</string>
+	</dict>
+	<key>BigBomb</key>
+	<dict>
+		<key>prizeAmount</key>
+		<integer>15</integer>
+		<key>path</key>
+		<string>bounce</string>
+		<key>image</key>
+		<string>bigBomb</string>
+		<key>deploymentSound</key>
+		<string>placeHolder</string>
+		<key>collectionSound</key>
+		<string>bigBombCollectionSound.wav</string>
+	</dict>
+</dict>
+</plist>

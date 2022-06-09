@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VKp-U0-3zl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CursedTimerULiL.ttf">
+            <string>CursedTimerULiL</string>
+        </array>
+        <array key="RASTMO__.TTF">
+            <string>RastaManOblique</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Rocket_Rescue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dF4-z6-XwQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="-558"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="UaM-KU-o8o">
+            <objects>
+                <viewController storyboardIdentifier="settings" title="Settings" id="EJw-gT-jrr" customClass="SettingsViewController" customModule="Rocket_Rescue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gm9-6u-BMB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="deepSpaceSettings" translatesAutoresizingMaskIntoConstraints="NO" id="0V5-i4-Rje">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11V-9T-ggT">
+                                <rect key="frame" x="20" y="93" width="244" height="17"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xe-me-OSE">
+                                <rect key="frame" x="20" y="122" width="244" height="17"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rescued" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naQ-SC-bWL">
+                                <rect key="frame" x="20" y="150" width="244" height="17"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zgb-V7-71P">
+                                <rect key="frame" x="20" y="179" width="335" height="402"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="5bX-f7-RQJ">
+                                    <size key="itemSize" width="75" height="75"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="missionCell" id="JbT-8c-kL0" customClass="MissionCollectionViewCell" customModule="Rocket_Rescue" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="75" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMP-mI-lZ7">
+                                                    <rect key="frame" x="0.0" y="54" width="75" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="12"/>
+                                                    <color key="textColor" red="0.2627450980392157" green="0.50196078431372548" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="missionName" destination="LMP-mI-lZ7" id="NAq-a4-DDj"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="stageHeader" id="POt-Ff-3qD" customClass="CollectionSectionHeader" customModule="Rocket_Rescue" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5S-ZP-3A3">
+                                            <rect key="frame" x="0.0" y="15" width="335" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="21"/>
+                                            <color key="textColor" red="0.2627450980392157" green="0.50196078431372548" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <connections>
+                                        <outlet property="stageName" destination="Y5S-ZP-3A3" id="7wH-0q-5Mc"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="EJw-gT-jrr" id="SjS-YE-xPA"/>
+                                    <outlet property="delegate" destination="EJw-gT-jrr" id="WuB-c3-nyh"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bis-vA-GTT">
+                                <rect key="frame" x="298" y="612" width="39" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" image="shareIcon"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="EJw-gT-jrr" eventType="touchUpInside" id="za8-9a-XQ9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rocket Rescue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWh-ZJ-P6H">
+                                <rect key="frame" x="20" y="49" width="335" height="22"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXE-if-1zQ">
+                                <rect key="frame" x="135" y="612" width="106" height="41"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="26"/>
+                                <state key="normal" title="Launch">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchButtonTapped:" destination="EJw-gT-jrr" eventType="touchUpInside" id="yPE-kB-xRr"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oAA-8y-H5g">
+                                <rect key="frame" x="20" y="223" width="335" height="180"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.85882352941176465" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leaderBoardCell" id="3AB-BS-gsA" customClass="LeaderBoardTableViewCell" customModule="Rocket_Rescue" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3AB-BS-gsA" id="QgG-8i-VgR">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xd7-If-gCS">
+                                                    <rect key="frame" x="9" y="12" width="193" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="RastaManOblique" family="RastaManOblique" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D97-gV-fn6">
+                                                    <rect key="frame" x="217" y="30" width="141" height="10"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="RastaManOblique" family="RastaManOblique" pointSize="8"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jee-6m-OHt">
+                                                    <rect key="frame" x="217" y="8" width="141" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="RastaManOblique" family="RastaManOblique" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90196078431372551" green="0.74509803921568629" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="playerName" destination="Xd7-If-gCS" id="tyL-9E-4JU"/>
+                                            <outlet property="playerScore" destination="Jee-6m-OHt" id="4DL-1I-ANj"/>
+                                            <outlet property="scoreDate" destination="D97-gV-fn6" id="y7a-9f-4gY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sectionHeader" id="8qB-IK-E6u" customClass="SectionHeaderViewCell" customModule="Rocket_Rescue" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="335" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8qB-IK-E6u" id="ksi-F0-ONX">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJw-d4-WMl">
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="RastaManOblique" family="RastaManOblique" pointSize="13"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.85882352941176465" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="sectionTitle" destination="ZJw-d4-WMl" id="rBd-cm-OnI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-QW-bkY" customClass="UIImageView">
+                                <rect key="frame" x="37" y="208" width="301" height="250"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHD-0s-Trl">
+                                        <rect key="frame" x="24" y="11" width="284" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIV-7J-Jc0">
+                                        <rect key="frame" x="17" y="40" width="185" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r2G-FH-YBX">
+                                        <rect key="frame" x="210" y="40.333333333333258" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqq-m9-aEv">
+                                        <rect key="frame" x="17" y="75" width="185" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGa-db-jB9">
+                                        <rect key="frame" x="17" y="111" width="185" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.74800670146942139" green="0.85247629880905151" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVu-Dy-gGR">
+                                <rect key="frame" x="27" y="612" width="40" height="41"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" image="trophy"/>
+                                <connections>
+                                    <action selector="scoresButton:" destination="EJw-gT-jrr" eventType="touchUpInside" id="3v1-HW-otf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCw-bb-Gc0">
+                                <rect key="frame" x="83" y="612" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" image="gameSettings"/>
+                                <connections>
+                                    <segue destination="ZVU-ml-1Yy" kind="show" id="t1h-WD-LLY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cKG-Yk-lCg"/>
+                    </view>
+                    <connections>
+                        <outlet property="leaderBoardTableView" destination="oAA-8y-H5g" id="0iQ-yL-oIw"/>
+                        <outlet property="missionImage" destination="r2G-FH-YBX" id="bcw-qP-0YD"/>
+                        <outlet property="missionLoot" destination="CGa-db-jB9" id="6Qb-h4-S9V"/>
+                        <outlet property="missionRescued" destination="aqq-m9-aEv" id="mwx-nE-5T3"/>
+                        <outlet property="missionScore" destination="TIV-7J-Jc0" id="Ma8-cG-BBe"/>
+                        <outlet property="missionSummary" destination="LB3-QW-bkY" id="1Hk-Ho-pH1"/>
+                        <outlet property="missionTitle" destination="MHD-0s-Trl" id="MpW-EN-XDN"/>
+                        <outlet property="stageCollectionView" destination="zgb-V7-71P" id="4pG-E2-SId"/>
+                        <outlet property="stageCollectionViewFlow" destination="5bX-f7-RQJ" id="dMm-45-y0A"/>
+                        <outlet property="totalLoot" destination="2Xe-me-OSE" id="wrO-dc-Pna"/>
+                        <outlet property="totalRescued" destination="naQ-SC-bWL" id="QdO-z9-bhI"/>
+                        <outlet property="totalScore" destination="11V-9T-ggT" id="6ML-mH-Az1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1g-hi-bDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355.072463768116" y="-560.49107142857144"/>
+        </scene>
+        <!--Game Settings-->
+        <scene sceneID="M1p-Gd-VD7">
+            <objects>
+                <viewController storyboardIdentifier="GameSettingsViewController" title="Game Settings" id="woM-Zu-N5I" customClass="GameSettingsViewController" customModule="Rocket_Rescue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VvV-qy-Whj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="deepSpaceSettings" translatesAutoresizingMaskIntoConstraints="NO" id="UK8-6h-Kyd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-8Z-XBG">
+                                <rect key="frame" x="20" y="121" width="240" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="cLU-hB-hom"/>
+                                    <constraint firstAttribute="width" constant="240" id="siV-th-WuQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Center " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQ9-aM-NyJ">
+                                <rect key="frame" x="20" y="192" width="180" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4B2-YH-pLI"/>
+                                    <constraint firstAttribute="width" constant="180" id="rwZ-6g-HzM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Scores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="un5-qG-i2X">
+                                <rect key="frame" x="20" y="260" width="180" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="lgD-ro-VrW"/>
+                                    <constraint firstAttribute="width" constant="180" id="s6J-TL-6Ft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameCenterSmall" translatesAutoresizingMaskIntoConstraints="NO" id="IYx-aK-bG7">
+                                <rect key="frame" x="296" y="187.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="V2k-d6-uPG"/>
+                                    <constraint firstAttribute="height" constant="44" id="WDH-kG-l1d"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2B-IR-Jv1">
+                                <rect key="frame" x="286" y="262.5" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="V8I-kN-kth"/>
+                                    <constraint firstAttribute="height" constant="30" id="cvY-tK-lr5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="17"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="socreReset:" destination="woM-Zu-N5I" eventType="touchUpInside" id="Idy-NT-Yys"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rex-Ny-KF3">
+                                <rect key="frame" x="279" y="124.5" width="69" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="4af-k4-jtA"/>
+                                    <constraint firstAttribute="height" constant="28" id="BT0-aq-3lb"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="On"/>
+                                    <segment title="Off"/>
+                                </segments>
+                                <connections>
+                                    <action selector="backGroundSound:" destination="woM-Zu-N5I" eventType="valueChanged" id="VW5-iw-2fW"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyH-r6-Oxp">
+                                <rect key="frame" x="104.5" y="565" width="166" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Mq-LS-de5"/>
+                                    <constraint firstAttribute="width" constant="166" id="XYa-oG-Zpm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="17"/>
+                                <state key="normal" title="Privacy Policy"/>
+                                <connections>
+                                    <action selector="privacyPolicy:" destination="woM-Zu-N5I" eventType="touchUpInside" id="hZJ-zb-zXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2A-SD-Ixc">
+                                <rect key="frame" x="130.5" y="603" width="114" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="RDu-tX-Mpv"/>
+                                    <constraint firstAttribute="height" constant="30" id="XR8-vS-6YU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="17"/>
+                                <state key="normal" title="Web Site"/>
+                                <connections>
+                                    <action selector="webSite:" destination="woM-Zu-N5I" eventType="touchUpInside" id="nfN-wz-S5Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okE-Sa-ire">
+                                <rect key="frame" x="276" y="401" width="64" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="jwp-Ug-sVa"/>
+                                    <constraint firstAttribute="width" constant="64" id="oA2-b8-zAR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="17"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changePrivacySettings:" destination="woM-Zu-N5I" eventType="touchUpInside" id="yU7-dL-VaQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add privacy settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mcb-jB-a6l">
+                                <rect key="frame" x="20" y="406" width="240" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7VQ-5D-nt3"/>
+                                    <constraint firstAttribute="height" constant="19" id="8yX-s6-Rck"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restore Purchases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbs-ne-khy">
+                                <rect key="frame" x="20" y="447" width="213" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Jmc-fg-RJk"/>
+                                    <constraint firstAttribute="width" constant="213" id="bkj-Kr-esP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nN7-p6-cLZ">
+                                <rect key="frame" x="260" y="444" width="80" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="4SS-Iw-hO9"/>
+                                    <constraint firstAttribute="width" constant="80" id="lWC-lI-DId"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="17"/>
+                                <state key="normal" title="Restore">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restorePurchases:" destination="woM-Zu-N5I" eventType="touchUpInside" id="K1a-TG-mFv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0n8-p0-hlI">
+                                <rect key="frame" x="142" y="527" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="27M-Im-Jga"/>
+                                    <constraint firstAttribute="width" constant="91" id="bHF-ib-mZX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="17"/>
+                                <state key="normal" title="Credits"/>
+                                <connections>
+                                    <action selector="credits:" destination="woM-Zu-N5I" eventType="touchUpInside" id="Ef4-5N-LZV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Adds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48H-fz-u2M">
+                                <rect key="frame" x="20" y="366" width="213" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="M0f-se-xW9"/>
+                                    <constraint firstAttribute="width" constant="213" id="aaG-Y1-ygr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ2-F6-vho">
+                                <rect key="frame" x="255" y="362" width="85" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="1Cp-0u-8mR"/>
+                                    <constraint firstAttribute="width" constant="85" id="aGX-Kn-idY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="17"/>
+                                <state key="normal" title="Purchase">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeAddsPruchase:" destination="woM-Zu-N5I" eventType="touchUpInside" id="URy-5r-PkM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74901960784313726" green="0.85098039215686272" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="48H-fz-u2M" firstAttribute="top" secondItem="un5-qG-i2X" secondAttribute="bottom" constant="71" id="1al-Gh-ZzL"/>
+                            <constraint firstItem="B2A-SD-Ixc" firstAttribute="top" secondItem="xyH-r6-Oxp" secondAttribute="bottom" constant="8" id="1qd-zh-90r"/>
+                            <constraint firstItem="Nbs-ne-khy" firstAttribute="top" secondItem="Mcb-jB-a6l" secondAttribute="bottom" constant="22" id="3me-I6-8hf"/>
+                            <constraint firstItem="IYx-aK-bG7" firstAttribute="centerY" secondItem="yQ9-aM-NyJ" secondAttribute="centerY" id="4Tn-Ym-z5c"/>
+                            <constraint firstItem="KEX-K7-Dw3" firstAttribute="trailing" secondItem="IYx-aK-bG7" secondAttribute="trailing" constant="35" id="4vq-vC-eue"/>
+                            <constraint firstItem="okE-Sa-ire" firstAttribute="centerY" secondItem="Mcb-jB-a6l" secondAttribute="centerY" id="6Rh-NJ-Qpv"/>
+                            <constraint firstItem="B2A-SD-Ixc" firstAttribute="centerX" secondItem="VvV-qy-Whj" secondAttribute="centerX" id="6gU-l2-6oh"/>
+                            <constraint firstItem="0tw-8Z-XBG" firstAttribute="top" secondItem="KEX-K7-Dw3" secondAttribute="top" constant="57" id="7mR-5o-R6e"/>
+                            <constraint firstItem="Mcb-jB-a6l" firstAttribute="leading" secondItem="0tw-8Z-XBG" secondAttribute="leading" id="A6Z-MI-Czd"/>
+                            <constraint firstItem="KEX-K7-Dw3" firstAttribute="bottom" secondItem="B2A-SD-Ixc" secondAttribute="bottom" constant="34" id="E8O-RA-lj3"/>
+                            <constraint firstItem="qJ2-F6-vho" firstAttribute="centerY" secondItem="48H-fz-u2M" secondAttribute="centerY" id="Frf-eI-32q"/>
+                            <constraint firstItem="rex-Ny-KF3" firstAttribute="centerY" secondItem="0tw-8Z-XBG" secondAttribute="centerY" id="Ig4-IT-D2n"/>
+                            <constraint firstItem="xyH-r6-Oxp" firstAttribute="centerX" secondItem="VvV-qy-Whj" secondAttribute="centerX" id="NcQ-Zq-ftJ"/>
+                            <constraint firstItem="yQ9-aM-NyJ" firstAttribute="leading" secondItem="0tw-8Z-XBG" secondAttribute="leading" id="OQ0-tg-V17"/>
+                            <constraint firstItem="nN7-p6-cLZ" firstAttribute="centerY" secondItem="Nbs-ne-khy" secondAttribute="centerY" id="OZe-ol-zjc"/>
+                            <constraint firstItem="KEX-K7-Dw3" firstAttribute="trailing" secondItem="l2B-IR-Jv1" secondAttribute="trailing" constant="35" id="T57-9K-BWw"/>
+                            <constraint firstItem="Nbs-ne-khy" firstAttribute="leading" secondItem="0tw-8Z-XBG" secondAttribute="leading" id="Tyr-S4-nWO"/>
+                            <constraint firstItem="un5-qG-i2X" firstAttribute="leading" secondItem="0tw-8Z-XBG" secondAttribute="leading" id="U44-Ob-xdW"/>
+                            <constraint firstItem="Mcb-jB-a6l" firstAttribute="top" secondItem="48H-fz-u2M" secondAttribute="bottom" constant="19" id="Wha-26-Y4f"/>
+                            <constraint firstItem="l2B-IR-Jv1" firstAttribute="centerY" secondItem="un5-qG-i2X" secondAttribute="centerY" id="ZrQ-Ov-qBQ"/>
+                            <constraint firstItem="0tw-8Z-XBG" firstAttribute="leading" secondItem="KEX-K7-Dw3" secondAttribute="leading" constant="20" id="e7w-KJ-Gkf"/>
+                            <constraint firstItem="KEX-K7-Dw3" firstAttribute="trailing" secondItem="okE-Sa-ire" secondAttribute="trailing" constant="35" id="euV-W2-mig"/>
+                            <constraint firstItem="KEX-K7-Dw3" firstAttribute="trailing" secondItem="rex-Ny-KF3" secondAttribute="trailing" constant="27" id="g4H-58-qxH"/>
+                            <constraint firstItem="48H-fz-u2M" firstAttribute="leading" secondItem="0tw-8Z-XBG" secondAttribute="leading" id="gE1-lC-Uv7"/>
+                            <constraint firstItem="0n8-p0-hlI" firstAttribute="centerX" secondItem="VvV-qy-Whj" secondAttribute="centerX" id="gnz-Sq-Tjc"/>
+                            <constraint firstItem="KEX-K7-Dw3" firstAttribute="trailing" secondItem="qJ2-F6-vho" secondAttribute="trailing" constant="35" id="iJT-7x-8qi"/>
+                            <constraint firstItem="yQ9-aM-NyJ" firstAttribute="top" secondItem="0tw-8Z-XBG" secondAttribute="bottom" constant="36" id="pA9-cc-rEy"/>
+                            <constraint firstItem="xyH-r6-Oxp" firstAttribute="top" secondItem="0n8-p0-hlI" secondAttribute="bottom" constant="8" id="wlg-Ol-F2M"/>
+                            <constraint firstItem="un5-qG-i2X" firstAttribute="top" secondItem="yQ9-aM-NyJ" secondAttribute="bottom" constant="33" id="yms-zl-Fp1"/>
+                            <constraint firstItem="KEX-K7-Dw3" firstAttribute="trailing" secondItem="nN7-p6-cLZ" secondAttribute="trailing" constant="35" id="z9V-SQ-rGN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KEX-K7-Dw3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="oAc-RZ-fwX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="CHQ-tB-Jdb">
+                            <connections>
+                                <action selector="doneButton:" destination="woM-Zu-N5I" id="X3i-er-J4o"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addConsentUpdate" destination="okE-Sa-ire" id="ZI5-Ga-sha"/>
+                        <outlet property="gameCentre" destination="IYx-aK-bG7" id="Bgb-fg-h0b"/>
+                        <outlet property="soundSwitch" destination="rex-Ny-KF3" id="P1R-HH-RoL"/>
+                        <outlet property="updateAddPrivacyLabel" destination="Mcb-jB-a6l" id="Jd0-mm-Uew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOl-XX-HR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3314.4000000000001" y="-559.97001499250382"/>
+        </scene>
+        <!--Game Navigation Controller-->
+        <scene sceneID="eeh-4b-xA7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="VKp-U0-3zl" customClass="GameNavigationController" customModule="Rocket_Rescue" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Er0-K2-CUa">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="eps-MH-Rn5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFg-xo-rvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-399" y="-558"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CfE-TU-aVY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZVU-ml-1Yy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vPY-Nm-n9C">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="CursedTimerULiL" family="Cursed Timer ULiL" pointSize="26"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="woM-Zu-N5I" kind="relationship" relationship="rootViewController" id="xwU-Ln-zxz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLT-7D-KcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2413" y="-560"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="deepSpaceSettings" width="993.5999755859375" height="1766.4000244140625"/>
+        <image name="gameCenterSmall" width="198" height="198"/>
+        <image name="gameSettings" width="33.702129364013672" height="41.361701965332031"/>
+        <image name="shareIcon" width="166.73684692382812" height="166.73684692382812"/>
+        <image name="trophy" width="117.33333587646484" height="117.33333587646484"/>
+    </resources>
+</document>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Background1</key>
+	<dict>
+		<key>image</key>
+		<string>stage1-scrollBackground</string>
+		<key>scrollingSpeed</key>
+		<integer>100</integer>
+		<key>bgSound</key>
+		<string>Background1-Sound.mp3</string>
+	</dict>
+	<key>Background2</key>
+	<dict>
+		<key>image</key>
+		<string>ScrollBackground2</string>
+		<key>scrollingSpeed</key>
+		<integer>100</integer>
+		<key>bgSound</key>
+		<string>Background2-Sound.mp3</string>
+	</dict>
+	<key>Background3</key>
+	<dict>
+		<key>image</key>
+		<string>ScrollBackground3</string>
+		<key>scrollingSpeed</key>
+		<integer>100</integer>
+		<key>bgSound</key>
+		<string>Background3-Sound.wav</string>
+	</dict>
+	<key>Background4</key>
+	<dict>
+		<key>image</key>
+		<string>ScrollBackground4</string>
+		<key>scrollingSpeed</key>
+		<integer>100</integer>
+		<key>bgSound</key>
+		<string>Background4-Sound.wav</string>
+	</dict>
+</dict>
+</plist>
